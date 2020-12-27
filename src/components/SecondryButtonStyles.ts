@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.button<any>`
-  width: 100%;
-  height: 80px;
+  background: none;
+  border: 0;
+  outline: 0;
 
-  background: red;
-  
   a {
+    padding: 20px;
+    background: red;
     text-decoration: none;
     font-size: 20px;
     color: #FFF;

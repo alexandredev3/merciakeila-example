@@ -11,10 +11,12 @@ type SecondryButtonProps = JSX.IntrinsicElements['button'] & Props;
 
 const SecondryButton: React.FC<SecondryButtonProps> = ({
   path,
-  children
+  children,
+  ...rest
 }) => {
   return (
-    <Container 
+    <Container
+      {...rest as SecondryButtonProps}
     >
       <Link to={path}>
         {children}
